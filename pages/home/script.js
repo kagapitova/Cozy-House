@@ -291,3 +291,34 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+const THEME_KEY = "cozy-house-theme";
+
+const themeToggles = document.querySelectorAll(".theme-toggle");
+
+const applyTheme = (theme) => {
+  const isPink = theme === "pink";
+
+  document.documentElement.classList.toggle("pink-theme", isPink);
+
+  themeToggles.forEach((toggle) => {
+    toggle.setAttribute("aria-pressed", String(isPink));
+    toggle.setAttribute(
+      "aria-label",
+      isPink ? "Switch to brown theme" : "Switch to pink theme"
+    );
+  });
+};
+
+const savedTheme = localStorage.getItem(THEME_KEY);
+
+applyTheme(savedTheme || "brown");
+
+themeToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const isPink = document.documentElement.classList.contains("pink-theme");
+    const nextTheme = isPink ? "brown" : "pink";
+    applyTheme(nextTheme);
+    localStorage.setItem(THEME_KEY, nextTheme);
+  });
+});

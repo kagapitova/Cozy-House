@@ -2,6 +2,122 @@
   box-sizing: border-box;
 }
 
+html.pink-theme {
+  --pink-main: #E8A0BF;
+  --pink-light: #F8D7E5;
+  --pink-dark: #B85C82;
+  --pink-background: #FFF5F8;
+  --pink-section: #FDEBF2;
+  --pink-card: #FFFFFF;
+  --pink-text: #5C3A49;
+}
+
+html.pink-theme body {
+  background-color: var(--pink-background);
+  color: var(--pink-text);
+}
+
+html.pink-theme section {
+  background-color: var(--pink-section);
+}
+
+html.pink-theme h1,
+html.pink-theme h2,
+html.pink-theme h3,
+html.pink-theme h4 {
+  color: var(--pink-dark);
+}
+
+html.pink-theme p {
+  color: var(--pink-text);
+}
+
+html.pink-theme .nav__link {
+  color: var(--pink-text);
+}
+
+html.pink-theme .nav__link:hover {
+  color: var(--pink-dark);
+}
+
+html.pink-theme .logo__subtitle {
+  color: var(--pink-text);
+}
+
+html.pink-theme .bar {
+  background-color: var(--pink-main);
+}
+
+html.pink-theme .button {
+  background-color: var(--pink-main);
+  color: #FFFFFF;
+}
+
+html.pink-theme .button:hover {
+  background-color: var(--pink-light);
+}
+
+html.pink-theme .pet-card {
+  background-color: var(--pink-card);
+}
+
+html.pink-theme .pet-card:hover {
+  box-shadow: 0 2px 8px rgba(184, 92, 130, 0.2);
+}
+
+html.pink-theme .popup {
+  background-color: var(--pink-section);
+}
+
+html.pink-theme .modal {
+  background-color: var(--pink-card);
+}
+
+html.pink-theme .background {
+  background:
+    radial-gradient(
+      100% 215.42% at 0% 0%,
+      #FFF5F8 0%,
+      #E8A0BF 100%
+    );
+}
+
+html.pink-theme .hero__title {
+  color: #5C3A49;
+}
+
+html.pink-theme .hero__description {
+  color: #6E4A59;
+}
+
+html.pink-theme .footer {
+  background: linear-gradient(
+    to top,
+    #B85C82 0%,
+    #D47FA1 5%,
+    #E8A0BF 35%,
+    var(--pink-section) 100%
+  );
+}
+
+html.pink-theme .footer__title {
+  color: #5C3A49;
+}
+
+html.pink-theme .footer__info {
+  color: #6E4A59;
+}
+
+html.pink-theme .header {
+  background: linear-gradient(
+    to bottom,
+    #B85C82 0%,
+    #D47FA1 10%,
+    #E8A0BF 50%,
+    var(--pink-section) 100%
+  );
+}
+
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 10px;
