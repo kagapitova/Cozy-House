@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shelter</title>
+    <title>Cozy-House</title>
 
     <link rel="icon" href="../../src/icons/favicon.ico">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <div class="background">
         <header class="header">
@@ -60,9 +59,9 @@
                             </li>
                         </ul>
                     </nav>
-
-                    <div class="popup"></div>
                 </div>
+                <div class="popup"></div>
+                <div class="blackout"></div>
             </div>
         </header>
 
@@ -140,25 +139,6 @@
 
             <div class="pets__gallery">
                 <div class="pets__arrow pets__arrow--left pointer"></div>
-
-                <div class="pet-card pointer">
-                    <img src="../../src/images/pets-katrine.png" alt="Katrine">
-                    <h3 class="pet-card__name">Katrine</h3>
-                    <a href="#" class="pet-card__button">Learn more</a>
-                </div>
-
-                <div class="pet-card pointer mobile-hidden">
-                    <img src="../../src/images/pets-jennifer.png" alt="Jennifer">
-                    <h3 class="pet-card__name">Jennifer</h3>
-                    <a href="#" class="pet-card__button">Learn more</a>
-                </div>
-
-                <div class="pet-card pointer tablet-hidden mobile-hidden">
-                    <img src="../../src/images/pets-woody.png" alt="Woody">
-                    <h3 class="pet-card__name">Woody</h3>
-                    <a href="#" class="pet-card__button">Learn more</a>
-                </div>
-
                 <div class="pets__arrow pets__arrow--right pointer"></div>
             </div>
 
@@ -341,7 +321,12 @@
 
         </div>
     </footer>
-
+    <div class="overlay hide">
+        <div class="modal">
+            <div class="modal-button pointer"></div>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>
