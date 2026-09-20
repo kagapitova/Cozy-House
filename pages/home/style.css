@@ -214,8 +214,6 @@ body {
   overflow: hidden;
 }
 
-/* Navigation */
-
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -317,8 +315,6 @@ body {
   line-height: 0;
 }
 
-/* About */
-
 .about__content {
   display: flex;
   justify-content: space-around;
@@ -368,6 +364,7 @@ body {
   }
 
   .nav__item {
+    padding-left: 15px;
     white-space: nowrap;
   }
 
@@ -1596,6 +1593,7 @@ html.pink-theme .theme-toggle__icon::before {
 .nav__item--theme {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .theme-toggle--mobile {
@@ -1605,10 +1603,6 @@ html.pink-theme .theme-toggle__icon::before {
 @media (max-width: 767px) {
   .theme-toggle--mobile {
     display: flex;
-  }
-
-  .nav__item--theme {
-    display: none !important;
   }
 
   .hamb {

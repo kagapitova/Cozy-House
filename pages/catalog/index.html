@@ -13,7 +13,6 @@
     </script>
 
     <link rel="icon" href="../../src/icons/favicon.ico">
-    <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Our pets</title>
@@ -38,16 +37,6 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-
-                    <button
-                        class="theme-toggle theme-toggle--mobile pointer"
-                        type="button"
-                        aria-label="Switch to pink theme"
-                        aria-pressed="false"
-                    >
-                        <span class="theme-toggle__icon"></span>
-                    </button>
-
                 </div>
 
                 <nav class="navbar">
@@ -101,10 +90,7 @@
 
                     </ul>
                 </nav>
-
-                <!-- Mobile popup -->
                 <div class="popup"></div>
-
             </div>
         </div>
     </header>
@@ -116,6 +102,31 @@
                 Our friends who<br>
                 are looking for a house
             </h1>
+            <div class="pets-filters">
+                <button
+                    class="pets-filter pets-filter--active pointer"
+                    type="button"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="pets-filter pointer"
+                    type="button"
+                    data-category="dogs"
+                >
+                    Dogs
+                </button>
+
+                <button
+                    class="pets-filter pointer"
+                    type="button"
+                    data-category="cats"
+                >
+                    Cats
+                </button>
+            </div>
             <div class="pets-gallery"></div>
             <div class="pets-gallery__buttons">
 
@@ -265,7 +276,6 @@
 
     </div>
     <div class="blackout"></div>
-    <script src="./script.js"></script>
-
+    <script  type="module" src="./script.js"></script>
 </body>
 </html>
