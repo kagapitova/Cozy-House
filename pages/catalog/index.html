@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        if (localStorage.getItem("cozy-house-theme") === "pink") {
+            document.documentElement.classList.add("pink-theme");
+        }
+    </script>
+
+    <link rel="icon" href="../../src/icons/favicon.ico">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Our pets</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-2-column">
+
+                <a href="../home/index.html" class="logo-link">
+                    <div class="logo">
+                        <p class="logo__title">Cozy House</p>
+                        <p class="logo__subtitle">Shelter for pets in Boston</p>
+                    </div>
+                </a>
+
+                <div class="hamb">
+
+                    <div class="hamb__field">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <button
+                        class="theme-toggle theme-toggle--mobile pointer"
+                        type="button"
+                        aria-label="Switch to pink theme"
+                        aria-pressed="false"
+                    >
+                        <span class="theme-toggle__icon"></span>
+                    </button>
+
+                </div>
+
+                <nav class="navbar">
+                    <ul class="nav__items">
+
+                        <li class="nav__item">
+                            <a
+                                class="nav__link pointer"
+                                href="../home/index.html"
+                            >
+                                About the shelter
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a
+                                class="nav__link nav_active pointer"
+                                href="#our-pets"
+                            >
+                                Our pets
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a
+                                class="nav__link pointer"
+                                href="../home/index.html#help"
+                            >
+                                Help the shelter
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a
+                                class="nav__link pointer"
+                                href="#contacts"
+                            >
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--theme">
+                            <button
+                                class="theme-toggle pointer"
+                                type="button"
+                                aria-label="Switch to pink theme"
+                                aria-pressed="false"
+                            >
+                                <span class="theme-toggle__icon"></span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Mobile popup -->
+                <div class="popup"></div>
+
+            </div>
+        </div>
+    </header>
+    <section class="our-friends" id="our-pets">
+
+        <div class="wrapper our-friends-3-row">
+
+            <h1 class="our-friends__title">
+                Our friends who<br>
+                are looking for a house
+            </h1>
+            <div class="pets-gallery"></div>
+            <div class="pets-gallery__buttons">
+
+                <button
+                    class="arrow_left_2 button-pagination"
+                    type="button"
+                >
+                    &lt;&lt;
+                </button>
+
+                <button
+                    class="arrow_left_1 button-pagination"
+                    type="button"
+                >
+                    &lt;
+                </button>
+
+                <button
+                    class="arrow_center"
+                    type="button"
+                >
+                    1
+                </button>
+
+                <button
+                    class="arrow_right_1 button-pagination"
+                    type="button"
+                >
+                    &gt;
+                </button>
+
+                <button
+                    class="arrow_right_2 button-pagination"
+                    type="button"
+                >
+                    &gt;&gt;
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer" id="contacts">
+
+        <div class="wrapper footer-3-column">
+            <div class="footer-column">
+
+                <h2 class="footer-title">
+                    For questions <br>
+                    and suggestions
+                </h2>
+
+                <a href="mailto:email@shelter.com">
+                    <div class="footer__contacts pointer">
+
+                        <img
+                            class="contacts__icon icon_point3"
+                            src="../../src/icons/mail.png"
+                            alt="mail"
+                        >
+
+                        <h4 class="contacts__info">
+                            email@shelter.com
+                        </h4>
+
+                    </div>
+                </a>
+
+                <a href="tel:+136745677554">
+                    <div class="footer__contacts pointer">
+
+                        <img
+                            class="contacts__icon"
+                            src="../../src/icons/phone.png"
+                            alt="phone"
+                        >
+
+                        <h4 class="contacts__info">
+                            +13 674 567 75 54
+                        </h4>
+
+                    </div>
+                </a>
+
+            </div>
+            <div class="footer-column column2">
+
+                <h2 class="footer-title title-2">
+                    We are waiting <br>
+                    for your visit
+                </h2>
+
+                <a
+                    href="https://goo.gl/maps/KzRyctMpw6xmnTbM6"
+                    target="_blank"
+                >
+                    <div class="footer__contacts pointer">
+
+                        <img
+                            class="contacts__icon icon_point1"
+                            src="../../src/icons/pin.png"
+                            alt="street"
+                        >
+
+                        <h4 class="contacts__info">
+                            1 Central Street, Boston
+                            <br>
+                            (entrance from the store)
+                        </h4>
+
+                    </div>
+                </a>
+
+                <a
+                    href="https://goo.gl/maps/FZowmeb8qP4gHR2h9"
+                    target="_blank"
+                >
+                    <div class="footer__contacts pointer">
+
+                        <img
+                            class="contacts__icon icon_point2"
+                            src="../../src/icons/pin.png"
+                            alt="street"
+                        >
+
+                        <h4 class="contacts__info">
+                            18 South Park, London
+                        </h4>
+
+                    </div>
+                </a>
+
+            </div>
+            <div class="footer-img">
+                <img src="../../src/images/footer-puppy.png" alt="footer puppy">
+            </div>
+
+        </div>
+    </footer>
+    <div class="overlay">
+
+        <div class="modal">
+            <div class="modal-button pointer"></div>
+        </div>
+
+    </div>
+    <div class="blackout"></div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
